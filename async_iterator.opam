@@ -12,14 +12,14 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "async"
-  "async_rpc_kernel"
-  "base"
-  "core"
-  "maybe_pushback"
-  "ppx_jane"
-  "rpc_parallel"
-  "dune"             {>= "3.17.0"}
+  "async" {>= "v0.18~" & < "v0.19~"}
+  "async_rpc_kernel" {>= "v0.18~" & < "v0.19~"}
+  "base" {>= "v0.18~" & < "v0.19~"}
+  "core" {>= "v0.18~" & < "v0.19~"}
+  "maybe_pushback" {>= "v0.18~" & < "v0.19~"}
+  "ppx_jane" {>= "v0.18~" & < "v0.19~"}
+  "rpc_parallel" {>= "v0.18~" & < "v0.19~"}
+  "dune" {>= "3.17.0"}
 ]
 available: arch != "x86_32"
 synopsis: "An opinionated asynchronous stream-processing framework"
